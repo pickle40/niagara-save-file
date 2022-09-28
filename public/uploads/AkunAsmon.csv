@@ -1,0 +1,88 @@
+﻿tipe_akun,kode_akun,parent_kode_akun,detail,nama
+Pendapatan,5,0,N,Pendapatan
+Beban,7,0,N,Biaya Usaha
+Beban,8,0,N,Biaya Overhead Pabrik
+Pendapatan,515,5,Y,Penjualan Serbuk
+Pendapatan,516,5,Y,Penjualan Protolan/Kayu Bakar
+Pendapatan,517,5,N,Pendapatan Jasa
+Pendapatan,517-001,517,Y,Pendapatan Jasa Produksi - Sawmil
+Pendapatan,517-002,517,Y,Pendapatan Jasa Produksi - KD
+Pendapatan,517-003,517,Y,Pendapatan Jasa Produksi - Moulding
+Pendapatan,519,5,Y,Penjualan Lain-Lain
+Pendapatan,523,5,Y,Biaya Komisi Penjualan
+Beban,700,7,N,Biaya Kantor
+Beban,700-001,700,Y,Gaji Staff
+Beban,700-002,700,Y,Biaya THR
+Beban,700-003,700,Y,Biaya Perjalanan Dinas
+Beban,700-004,700,Y,"Biaya Telpon, Pulsa, Internet Kantor"
+Beban,700-005,700,Y,Biaya PLN Kantor
+Beban,700-006,700,Y,Biaya Konsumsi
+Beban,700-007,700,Y,Biaya Asuransi
+Beban,700-008,700,Y,Biaya Bank
+Beban,700-009,700,Y,Biaya Administrasi / ATK
+Beban,700-010,700,Y,Biaya Pelaksanaan Export
+Beban,700-011,700,Y,Biaya Keamanan
+Beban,700-012,700,Y,Biaya Air Minum
+Beban,700-013,700,Y,Biaya BPJS Ketenagakerjaan
+Beban,700-014,700,Y,Biaya LMK + TPK ( Pas Lokal )
+Beban,700-015,700,Y,Biaya Umum Lainnya ( RT Kantor/Keperluan Kantor )
+Beban,700-016,700,Y,Biaya Asuransi Bangunan
+Beban,700-017,700,Y,Biaya Perizinan
+Beban,700-018,700,Y,Biaya Pendidikan & Seminar
+Beban,700-019,700,Y,Biaya Pajak Bumi Bangunan ( PBB )
+Beban,700-020,700,Y,Biaya Pajak Kendaraan
+Beban,700-021,700,Y,Biaya Jamuan Tamu
+Beban,700-022,700,Y,Biaya Sumbangan
+Beban,700-023,700,Y,Biaya Pemeliharaan Aset
+Beban,700-024,700,Y,Biaya Pemeliharaan Kendaraan
+Beban,700-025,700,Y,Biaya Pemeliharaan Inventaris
+Beban,700-026,700,Y,Biaya Konsultan
+Beban,700-027,700,Y,Beban Tunjangan Pph 21
+Beban,700-028,700,Y,Pph 22
+Beban,700-029,700,Y,Pph 23
+Beban,700-030,700,Y,Pph 25
+Beban,700-031,700,Y,Pph Pasal 4
+Beban,700-032,700,Y,Denda Pajak
+Beban,700-033,700,Y,Pelaporan PPN
+Beban,700-034,700,Y,Biaya Penyusutan
+Beban,700-035,700,Y,BBM Kendaraan
+Beban,700-036,700,Y,Pph 21
+Beban,700-037,700,Y,Pph Final
+Beban,800,8,N,"Biaya Proses Produksi Log, Lokal, Export"
+Beban,800-001,800,Y,Bi. Upah Borongan Produksi
+Beban,800-002,800,Y,Bi. Upah Borongan Sawmil
+Beban,800-003,800,Y,Bi. Upah Borongan KD
+Beban,800-004,800,Y,Bi. Upah Harian Produksi
+Beban,800-005,800,Y,Bi. Upah Harian Sawmil
+Beban,800-006,800,Y,Bi. Upah Harian KD
+Beban,800-007,800,Y,Bi. Upah Lembur / Bi. U. Makan Lembur
+Beban,800-008,800,Y,Bi. THR
+Beban,800-009,800,Y,Bi. Maintenance Mesin
+Beban,800-010,800,Y,Bi. PLN Pabrik
+Beban,800-011,800,Y,"Bi. Telp, Pulsa & Internet Pabrik"
+Beban,800-012,800,Y,Bi. Packing
+Beban,800-013,800,Y,Bi. Ongkos Truck
+Beban,800-014,800,Y,Bi. BBM Untuk Produksi
+Beban,800-015,800,Y,Bi. Forklift
+Beban,800-016,800,Y,Bi. Oli
+Beban,800-017,800,Y,Bi. Sparepart Mesin
+Beban,800-018,800,Y,Bi. Circle & Cutter
+Beban,800-019,800,Y,Bi. Air
+Beban,800-020,800,Y,"Bi. Lem, Cat, dll"
+Beban,800-021,800,Y,Bi. APH
+Beban,800-022,800,Y,Bi. Kayu Bakar
+Beban,800-023,800,Y,Bi. Keperluan Pabrik
+Beban,800-024,800,Y,Bi. Bongkar Log
+Beban,800-025,800,Y,Bi. Pengobatan
+Beban,800-026,800,Y,"Bi. Transport, Bensin, Parkir, Tol"
+Beban,800-027,800,Y,Bi. Sewa Tempat Kerja / Gudang
+Beban,800-028,800,Y,Bi. Sewa Mesin & Peralatan
+Beban,800-029,800,Y,Bi. Pemeliharaan Gudang
+Beban,800-030,800,Y,Bi. Jasa Gesek Sawmil
+Beban,800-031,800,Y,Bi. Managemen Fee Outsorching
+Beban,800-032,800,Y,Bi. Jasa Produksi
+Beban,800-033,800,Y,Bi. Gaji Outsourching
+Harta,1,0,N,Aktiva Lancar
+Harta,110,1,Y,Kas
+Harta,160,1,N,Ayat Silang
+Harta,160-0488,160,Y,Ayat Silang Dengan BCA

@@ -1,0 +1,25 @@
+.btn-update{
+	background-color: #2d4fef;
+	color: #fff;
+	font-weight: bold;
+}
+
+.habis-span{
+	color: #ff6258;
+	font-weight: bold;
+	background-color: rgba(255, 98, 88, 0.2);
+}
+
+.habis-span:hover{
+	color: #ff6258;
+}
+
+.tersedia-span{
+	color: #19d895;
+	font-weight: bold;
+	background-color: rgba(25, 216, 149, 0.2);
+}
+
+.tersedia-span:hover{
+	color: #19d895;
+}

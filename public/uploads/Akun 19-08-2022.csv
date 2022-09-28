@@ -1,0 +1,180 @@
+﻿tipe_akun,kode_akun,nama,saldo_awal
+Aktiva Lancar,110,Kas,0
+Aktiva Lancar,120,Peluang Dagang,0
+Aktiva Lancar,130,Biaya dibayar di muka,0
+Aktiva Lancar,140,Persediaan,0
+Aktiva Lancar,150,Pajak,0
+Aktiva Lancar,160,Ayat Silang,0
+Aktiva Lancar,170,Asuransi dibayar Dimuka,0
+Aktiva Tetap,210,Tanah & Bangunan,0
+Aktiva Tetap,220,Kendaraan,0
+Aktiva Tetap,203,Inventaris Kantor,0
+Aktiva Tetap,240,Inventaris Pabrik,0
+Aktiva Tetap,250,Mesin & Peralatan,0
+Aktiva Tetap,260,Investasi,0
+Aktiva Tetap,270,Akumulasi Penyusutan,0
+Kewajiban Lancar,310,Hutang,0
+Aktiva Lancar,120-001,Piutang Dagang export,0
+Aktiva Lancar,120-002,Piutang Serbuk,0
+Aktiva Lancar,120-003,Piutang Lokal PPN,0
+Aktiva Lancar,120-004,Piutang Lokal Non PPN,0
+Aktiva Lancar,120-005,Piutang Lain-lain,0
+Aktiva Lancar,120-006,Piutang Direksi,0
+Aktiva Lancar,120-007,Piutang Direksi,0
+Aktiva Lancar,120-008,Piutang antar DVC,0
+Aktiva Lancar,130-001,Uang Muka Pembelian usaha / bahan baku,0
+Aktiva Lancar,130-002,Uang Muka Pembelian mesin,0
+Aktiva Lancar,130-003,Uang Muka Pembelian lain / Uang muka biaya lain-lain,0
+Aktiva Lancar,140-001,Persediaan Bhn Baku AD,0
+Aktiva Lancar,140-002,Persediaan Bhn Baku KD,0
+Aktiva Lancar,140-003,Persediaan dalam proses (WIP) AD,0
+Aktiva Lancar,140-004,Persediaan dalam proses (WIP) KD,0
+Aktiva Lancar,140-005,Persediaan Brg jadi AD,0
+Aktiva Lancar,140-006,Persediaan Brg jadi KD,0
+Aktiva Lancar,140-007,"Persediaan bahan baku pembantu (lem, cat, amplas, alat packing)",0
+Aktiva Lancar,150-001,PPN Masukan,0
+Aktiva Lancar,150-002,Pajak Dibayar Dimuka,0
+Aktiva Lancar,150-003,PPH Ps 22,0
+Aktiva Lancar,150-004,PPH ps 25,0
+Aktiva Lancar,150-005,PPH Ps 23,0
+Aktiva Lancar,150-006,PPH 21,0
+Aktiva Lancar,150-007,PPN Masukan yg blm dikembalikan,0
+Aktiva Lancar,160-T533,Ayat silang dengan T533,0
+Aktiva Lancar,160-VTR,Ayat silang dengan VTR,0
+Aktiva Lancar,160-5C,Ayat silang dengan Suci,0
+Aktiva Lancar,160-BBA,Ayat silang dengan BBA,0
+Aktiva Lancar,160-KK,Ayat silang dengan kas kantor,0
+Kewajiban Lancar,310-001,Hutang Usaha / Hutang Pembelian Bahan Baku,0
+Kewajiban Lancar,310-002,Uang Muka Penjualan ( Down Payment ),0
+Kewajiban Lancar,310-003,Hutang Pihak 3,0
+Kewajiban Lancar,310-004,Hutang Direksi,0
+Kewajiban Lancar,310-005,Hutang Lain-lain,0
+Kewajiban Lancar,310-006,Hutang Pph ps 21,0
+Kewajiban Lancar,310-007,Hutang Pph 23,0
+Kewajiban Lancar,310-008,Hutang Pph ps 25,0
+Kewajiban Lancar,310-009,Hutang Gaji,0
+Kewajiban Lancar,310-010,Hutang Biaya Lain,0
+Kewajiban Lancar,310-011,Hutang Jangka Pendek,0
+Kewajiban Lancar,310-012,Hutang Jangka Panjang,0
+Kewajiban Lancar,310-013,PPN Keluaran,0
+Kewajiban Lancar,310-014,Hutang Pph 22,0
+Kewajiban Lancar,310-015,Hutang Antar DVC,0
+Kewajiban Lancar,310-016,Hutang Leasing,0
+Kewajiban Lancar,310-017,Hutang Pph Psl 4,0
+Kewajiban Lancar,310-018,Hutang Pph Ps 25,0
+Kewajiban Lancar,310-019,PPH Final,0
+Modal,410,Modal Dasar,0
+Pendapatan,510,Penjualan Export,0
+Pendapatan,511,Retur / Claim penjualan export,0
+Pendapatan,512,Biaya Export,0
+Pendapatan,512-001,Biaya Freigt Kapal,0
+Pendapatan,512-002,Biaya Fumigasi,0
+Pendapatan,512-003,Biaya Socofindo (LS),0
+Pendapatan,512-004,Biaya SVLK,0
+Pendapatan,512-005,Biaya kirim docs - DHL,0
+Pendapatan,512-006,Biaya Telex Release,0
+Pendapatan,513,Penjualan Lokal - Sawn Timber,0
+Pendapatan,514,Penjualan Lokal - Reng,0
+Pendapatan,515,Penjualan Serbuk,0
+Pendapatan,516,Penjualan Protolen/Kayu bakar,0
+Pendapatan,517,Pendapatan Jasa,0
+Pendapatan,517-001,Pendapatan Jasa Produksi - Sawmil,0
+Pendapatan,517-002,Pendapatan Jasa Produksi - KD,0
+Pendapatan,517-003,Pendapatan Jasa Produksi - Maulding,0
+Pendapatan,518,Pendapatan sewa mesin & peralatan,0
+Pendapatan,519,Penjualan Lain-Lain,0
+Pendapatan,520,Pendapatan Non PPN,0
+Pendapatan,521,Biaya LC,0
+Pendapatan,522,Penjualan Log,0
+Pendapatan,523,Biaya Komisi Penjualan,0
+Pendapatan,524,Biaya Marketing,0
+Pendapatan,525,Penjualan Bed,0
+Pendapatan,526,Penjualan Table,0
+HPP,610,Pembelian Bahan Baku,0
+HPP,620,Retur / Claim pembelian BB,0
+HPP,630,Biaya pembelian bhn baku,0
+HPP,640,Pembelian Barang Jadi,0
+Beban,700,Biaya Kantor,0
+Beban,700-001,Gaji Staff,0
+Beban,700-002,Biaya THR,0
+Beban,700-003,Biaya Perjalanan Dinas,0
+Beban,700-004,"Biaya Telpon, pulsa, internet kantor",0
+Beban,700-005,Biaya PLN kantor,0
+Beban,700-006,Biaya konsumsi,0
+Beban,700-007,Biaya Asuransi,0
+Beban,700-008,Biaya bank,0
+Beban,700-009,Biaya Administrasi / ATK,0
+Beban,700-010,Biaya Pelaksanaan Export,0
+Beban,700-011,Biaya Keamanan,0
+Beban,700-012,Biaya air minum,0
+Beban,700-013,Biaya BPJS Ketenagakerjaan,0
+Beban,700-014,Biaya LMK + TPK (Pas Lokal),0
+Beban,700-015,Biaya Umum lainnya (RT kantor / keperluan kantor),0
+Beban,700-016,Biaya Asuransi Bangunan,0
+Beban,700-017,Biaya Perizinan,0
+Beban,700-018,Biaya Pendidikan & Seminar,0
+Beban,700-019,Biaya Pajak Bumi Bangunan (PBB),0
+Beban,700-020,Biaya Pajak Kendaraan,0
+Beban,700-021,Biaya Jamuan tamu,0
+Beban,700-022,Biaya Sumbangan,0
+Beban,700-023,Biaya Pemeliharaan Aset,0
+Beban,700-024,Biaya Pemeliharaan Kendaraan,0
+Beban,700-025,Biaya Pemeliharaan Inventaris,0
+Beban,700-026,Biaya Konsultan,0
+Beban,700-027,Beben Tunjangan Pph 21,0
+Beban,700-028,Pph 22,0
+Beban,700-029,Pph 23,0
+Beban,700-030,Pph 25,0
+Beban,700-031,Pph Pasal 4,0
+Beban,700-032,Denda Pajak,0
+Beban,700-033,Pelaporan PPN,0
+Beban,700-034,Biaya Penyusutan,0
+Beban,700-035,BBM Kendaraan,0
+Beban,700-036,Pph 21,0
+Beban,700-037,Pph Final,0
+Beban,800,"Biaya Proses Produksi Log, Lokal, Export",0
+Beban,800-001,Bi. Upah borongan produksi,0
+Beban,800-002,Bi. Upah borongan sawmil,0
+Beban,800-003,Bi. Upah borongan KD,0
+Beban,800-004,Bi. Upah harian produksi,0
+Beban,800-005,Bi. Upah harian sawmil,0
+Beban,800-006,Bi. Upah harian KD,0
+Beban,800-007,Bi. Upah lembur / Bi. U. makan lembur,0
+Beban,800-008,Bi. THR,0
+Beban,800-009,Bi. Maintenance mesin,0
+Beban,800-010,Bi. PLN pabrik,0
+Beban,800-011,"Bi. Telp, pulsa & internet pabrik",0
+Beban,800-012,Bi. Packing,0
+Beban,800-013,Bi. Ongkos truck,0
+Beban,800-014,Bi. BBM untuk produksi,0
+Beban,800-015,Bi. Forkitt,0
+Beban,800-016,Bi. Oli,0
+Beban,800-017,Bi. Sparepart mesin,0
+Beban,800-018,Bi. Circle & Cutter,0
+Beban,800-019,Bi. Air,0
+Beban,800-020,"Bi. Lem, Cat, dll",0
+Beban,800-021,Bi. APH,0
+Beban,800-022,Bi. Kayu bakar,0
+Beban,800-023,Bi. Keperluan pabrik,0
+Beban,800-024,Bi. Bongkar Log,0
+Beban,800-025,Bi. Pengobatan,0
+Beban,800-026,"Bi. Transport, bensin, parkir, tol",0
+Beban,800-027,Bi. Sewa tempat kerja / gudang,0
+Beban,800-028,Bi. Dewa Mesin & Peralatan,0
+Beban,800-029,Bi. Pemeliharaan gudang,0
+Beban,800-030,Bi. Jasa gesak sawmil,0
+Beban,800-031,Bi. Management Fee Outsourcing,0
+Beban,800-032,Bi. Jasa Produksi,0
+Beban,800-033,Bi. Gaji OutSourcing,0
+Pendapatan,910,Pendapatan lain-lain di luar usaha,0
+Pendapatan,920,Biaya - Biaya diluar usaha,0
+Pendapatan,920-001,Bi. Provisi,0
+Pendapatan,920-002,Bi. Bank Lain2,0
+Pendapatan,920-003,Bi. Bunga Bank,0
+Pendapatan,920-004,Bi. Bunga PRK,0
+Pendapatan,920-005,Bi. Bunga Lain-Lain,0
+Pendapatan,930,Pendapatan Bunga Bank,0
+Pendapatan,940,Biaya bunga bank / Pajak bunga bank,0
+Pendapatan,950,Prive,0
+Pendapatan,960,Selisih kurs,0
+Pendapatan,970,Selisih harga atas penjualan aset (+/-),0

@@ -1,0 +1,3 @@
+﻿tipe_akun,kode_akun,parent_kode_akun,sub_kode_akun,detail,nama,tanggal,debit,kredit
+Harta,111,110,0,Y,Kas,2022-07-07 00:00:00,0,0
+Beban,6111,600,0,Y,Beban Listrik,2022-07-07 00:00:00,0,0
