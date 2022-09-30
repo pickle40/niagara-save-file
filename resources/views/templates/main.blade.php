@@ -54,19 +54,6 @@
         <div class="container-fluid page-body-wrapper">
             <!-- SideNav -->
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                {{-- <!-- <h5 class="navbar-brand">Welcome, {{ Auth::user()->nama_depan }}</h5>   --> --}}
-                <div class="navbar-brand"
-                    style="margin-right:0;border-top:0.5px solid rgb(212,212,212,0.3);border-bottom:0.5px solid rgb(212,212,212,0.3)">
-                    <div class="row" style="color:white;margin:auto">
-                        <div class="col-12 mt-1">
-                            {{-- <h6 style="margin-left:20px">{{ Auth::user()->nama_depan }} --}}
-                            <!-- <h5 style="margin-left:20px"> Raisa Saraswati</h5> -->
-                        </div>
-                        <div class="col-12 ">
-                            {{-- <p style="color:#d4d4d4;margin-left:20px;margin-bottom:0">{{ Auth::user()->posisi }}</p> --}}
-                        </div>
-                    </div>
-                </div>
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/dashboard') }}">
@@ -101,7 +88,7 @@
                             <span class="menu-title">Save File Gambar</span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div class="collapse" id="save-file">
+                        <div class="collapse" id="save-file-gambar">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{url('/save-file-gambar')}}">Save File Gambar</a>
@@ -116,45 +103,46 @@
                         </div>
                     </li>
 
-            <li class="nav-item">
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-                    <button class="btn btn-danger" type="submit">Logout</button>
-                </form>
-            </li>
-    </ul>
+                    <li class="nav-item">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <div class="text-center" style="margin-top:10px;">
+                                <button class="btn btn-danger" type="submit"><i class="mdi mdi-logout"></i>Logout</button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
 
+            </nav>
+            <!-- End-SideNav -->
 
-    </nav>
-    <!-- End-SideNav -->
-
-    <div class="main-panel">
-        <div class="content-wrapper" id="content-web-page">
-            @yield('content')
-        </div>
-        <div class="content-wrapper" id="content-web-search" hidden="">
-            <div class="row">
-                <div class="col-12 text-left">
-                    <h3 class="d-block">Cari Halaman</h3>
-                    <h5 class="mt-3 d-block"><span class="result-1"></span> <span class="result-2"></span></h5>
+            <div class="main-panel">
+                <div class="content-wrapper" id="content-web-page">
+                    @yield('content')
                 </div>
-                <div class="col-12 mt-3">
-                    <div class="row" id="page-result-parent">
+                <div class="content-wrapper" id="content-web-search" hidden="">
+                    <div class="row">
+                        <div class="col-12 text-left">
+                            <h3 class="d-block">Cari Halaman</h3>
+                            <h5 class="mt-3 d-block"><span class="result-1"></span> <span class="result-2"></span></h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="row" id="page-result-parent">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <footer class="footer" id="footer-content">
+                    {{-- <div class="container-fluid clearfix">
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a
+                        href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                        class="mdi mdi-heart text-danger"></i>
+                    </span>
+                  </div> --}}
+                </footer>
             </div>
         </div>
-        <footer class="footer" id="footer-content">
-            {{-- <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a
-                href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
-                class="mdi mdi-heart text-danger"></i>
-            </span>
-          </div> --}}
-        </footer>
-    </div>
-    </div>
     </div>
 
     <!-- Javascript -->

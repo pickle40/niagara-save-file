@@ -6,23 +6,32 @@
 @endsection
 
 @section('content')
-    <div class="text-left">
-        <button type="button" class="btn btn-danger" onclick="location.href='{{ url('/save-file-gambar') }}'">Back</button>
-    </div>
+    
     <form>
         <div class="row page-title-header" style="margin-top:15px;">
             <div class="col-12">
                 <div class="page-header d-flex justify-content-between align-items-center">
                     <h4 class="page-title">Gambar</h4>
                     <div class="d-flex justify-content-start">
-                        
+                        <div class="text-right">
+                            <button type="button" class="btn btn-danger" onclick="location.href='{{ url('/save-file-gambar') }}'"><i class="mdi mdi-keyboard-backspace"></i>Back</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        {{-- <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="{{ asset('/images/app_admin/'.$list_img->file.'/') }}">
+                    </div> 
+                </div>
+            </div>
+        </div> --}}
         <div class="form-group">
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 text-center">
                     <img src="{{ asset('/images/app_admin/'.$list_img->file.'/') }}">
                 </div>             
             </div>
