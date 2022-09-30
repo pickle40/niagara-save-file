@@ -7,6 +7,7 @@ use App\Http\Requests\StoreSaveFileRequest;
 use App\Http\Requests\UpdateSaveFileRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class SaveFileController extends Controller
 {
@@ -154,28 +155,41 @@ class SaveFileController extends Controller
 
     public function deleteimg($id)
     {
-        DB::table('save_img')
-        ->where('id', '=', $id)
-        ->update([
-            "deleted" => 1,
-            "deleted_at"=>date('Y-m-d H:i:s')
-        ]);
-        DB::commit();
+        $list_file = DB::table('save_img')->where('id',$id)->first('file');
+        if(File::exists(public_path('images/app_admin/'.$list_file->file))){
+            File::delete(public_path('images/app_admin/'.$list_file->file));
+            DB::table('save_img')
+            ->where('id', '=', $id)
+            ->update([
+                "deleted" => 1,
+                "deleted_at"=>date('Y-m-d H:i:s')
+            ]);
+            DB::commit();
+        }else{
+            dd('File does not exists.');
+        }
         return redirect('/save-file-gambar')->with("create_success", "File Berhasil Dihapus");
     }
 
     public function deletefile($id)
     {
-        DB::beginTransaction();
+        $list_file = DB::table('save_files')->where('id',$id)->first('file');
+        if(File::exists(public_path('file/app_admin/'.$list_file->file))){
+            File::delete(public_path('file/app_admin/'.$list_file->file));
+            DB::beginTransaction();
 
-        DB::table('save_files')
-            ->where('id', '=', $id)
-            ->update([
-                "deleted" => 1,
-                "deleted_at"=>date('Y-m-d H:i:s')
-
-            ]);
-            DB::commit();
+            DB::table('save_files')
+                ->where('id', '=', $id)
+                ->update([
+                    "deleted" => 1,
+                    "deleted_at"=>date('Y-m-d H:i:s')
+    
+                ]);
+                DB::commit();
+        }else{
+            dd('File does not exists.');
+        }
+       
         return redirect('/save-file')->with("create_success", "File Berhasil Dihapus");
     }
 
