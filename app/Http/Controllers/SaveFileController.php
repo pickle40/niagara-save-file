@@ -17,11 +17,12 @@ class SaveFileController extends Controller
      */
     public function index()
     {
-        $list_file = DB::table('save_files')->whereNull('deleted_at')->get();
+        $list_file = DB::table('save_files')->whereNull('deleted')->get();
         return view(
             'savefile/file.saveFile',compact('list_file')
         );
     }
+    
 
     public function add()
     {
@@ -30,17 +31,20 @@ class SaveFileController extends Controller
 
     public function history()
     {
-         return view('savefile/file.logAddFile');
+        $list_file = DB::table('save_files')->get();
+         return view('savefile/file.logAddFile',compact('list_file'));
     }
 
     public function historydelete()
     {
-        return view('savefile/file.logDeleteFile');
+        $list_file = DB::table('save_files')->whereNotNull('deleted')->get();
+
+        return view('savefile/file.logDeleteFile',compact('list_file'));
     }
 
     public function indeximg()
     {
-        $list_img = DB::table('save_img')->whereNull('deleted_at')->get();
+        $list_img = DB::table('save_img')->whereNull('deleted')->get();
 
         return view(
             'savefile/filegambar.saveFileGambar',compact('list_img'));
@@ -68,12 +72,14 @@ class SaveFileController extends Controller
 
     public function historyimg()
     {
-        return view('savefile/filegambar.logAddFileGambar');
+        $list_img = DB::table('save_img')->get();
+        return view('savefile/filegambar.logAddFileGambar',compact('list_img'));
     }
 
     public function historydeleteimg()
     {
-        return view('savefile/filegambar.logDeleteFileGambar');
+        $list_img = DB::table('save_img')->whereNotNull('deleted')->get();
+        return view('savefile/filegambar.logDeleteFileGambar',compact('list_img'));
     }
 
 
@@ -151,7 +157,8 @@ class SaveFileController extends Controller
         DB::table('save_img')
         ->where('id', '=', $id)
         ->update([
-            "deleted_at" => 1
+            "deleted" => 1,
+            "deleted_at"=>date('Y-m-d H:i:s')
         ]);
         DB::commit();
         return redirect('/save-file-gambar')->with("create_success", "File Berhasil Dihapus");
@@ -164,7 +171,9 @@ class SaveFileController extends Controller
         DB::table('save_files')
             ->where('id', '=', $id)
             ->update([
-                "deleted_at" => 1
+                "deleted" => 1,
+                "deleted_at"=>date('Y-m-d H:i:s')
+
             ]);
             DB::commit();
         return redirect('/save-file')->with("create_success", "File Berhasil Dihapus");

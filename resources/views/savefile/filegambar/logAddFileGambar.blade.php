@@ -25,19 +25,19 @@
                     <table class="table table-bordered" id="table-akun">
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>tanggal Di simpan</th>
                                 <th>Nama</th>
                                 <th>Nama File Gambar</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>28 September 2022</td>
-                                <td>Kucing</td>
-                                <td>Kucing Anggora</td>
-                            </tr>
+                          @foreach ($list_img as $item)
+                          <tr>
+                            <td>{{ date('d F Y', strtotime($item->created_at)) }}</td>
+                            <td>{{ $item->name }}</td>
+                            <td>{{ $item->file }}</td>
+                        </tr>
+                          @endforeach
                             {{-- @foreach ($po_bahan as $i)
                             <tr>
                                 <td>{{ $i->id_po_bahan_baku }}</td>

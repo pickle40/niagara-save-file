@@ -32,12 +32,13 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <@foreach ($list_img as $item)
                             <tr>
-                                <td>1</td>
-                                <td>28 September 2022</td>
-                                <td>Kucing</td>
-                                <td>Kucing Anggora</td>
-                            </tr>
+                              <td>{{ date('d F Y', strtotime($item->created_at)) }}</td>
+                              <td>{{ $item->name }}</td>
+                              <td>{{ $item->file }}</td>
+                          </tr>
+                            @endforeach
                             {{-- @foreach ($po_bahan as $i)
                             <tr>
                                 <td>{{ $i->id_po_bahan_baku }}</td>

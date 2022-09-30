@@ -46,7 +46,7 @@
                                 <td>{{ $file->file }}</td>
                                 <td>
                                     <button type="button" onclick="location.href='{{ url('file/'.$file->id) }}'" class="btn btn-primary btn-sm"><i class="mdi mdi-eyes"></i>View File</button>
-                                    <button type="button" onclick="location.href='{{ url('deletefile/'.$file->id) }}'" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete Gambar</button>
+                                    <button type="button" onclick="location.href='{{ url('deletefile/'.$file->id) }}'" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete File</button>
                                 </td>
                             </tr>
                             @endforeach
