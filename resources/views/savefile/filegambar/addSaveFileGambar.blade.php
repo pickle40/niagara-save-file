@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<form action="{{ url('/po-bahanbaku/add') }}" method="POST">
+<form action="{{ url('/img/add') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="row page-title-header">
             <div class="col-12">
@@ -24,10 +24,10 @@
             <div class="form-group">
                 <div class="row">
                     <div class="col-2">
-                        <label for="nama" class="text">Nama</label>
+                        <label for="name" class="text">Nama</label>
                     </div>
                     <div class="col-10">
-                        <input type="text" class="form-control textField" id="nama" placeholder="Masukkan Nama" name="nama">
+                        <input type="text" class="form-control textField" id="nama" placeholder="Masukkan Nama" name="name">
                     </div>
                 </div>
             </div>
@@ -38,14 +38,15 @@
                         <label for="upload-file-gambar" class="text">Upload File Gambar Design</label>
                     </div>
                     <div class="col-10">
-                        <input type="file" class="textField" id="upload_file_gambar" name="upload_file_gambar">
+                        <input type="file" name="file_img" class="inp-img"
+                        id="ordinary" accept=".jpg,.jpeg,.png" required>
                     </div>                
                 </div>
             </div>
             
             <div class="text-right">
                 <button type="button" class="btn btn-danger"  onclick="location.href='{{ url('save-file-gambar') }}'"><i class="mdi mdi-cancel"></i>Cancel</button>
-                <button type="button" class="btn btn-success"><i class="mdi mdi-content-save"></i>Save</button>
+                <button type="submit" class="btn btn-success"><i class="mdi mdi-content-save"></i>Save</button>
             </div>
     </form>
 @endsection
@@ -364,6 +365,5 @@
         rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
         return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
     }
-</script>
-
+    </script>
 @endsection

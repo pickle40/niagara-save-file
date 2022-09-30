@@ -30,33 +30,23 @@ Route::middleware(
         return view('templates.main');
     })->name('dashboard');
 
-    //------------------------- Save File --------------------------------
-    Route::get('/save-file', function () {
-        return view('savefile/file.saveFile');
-    });
-    Route::get('/save-file/add', function () {
-        return view('savefile/file.addSaveFile');
-    });
-    Route::get('/save-file-history-input', function () {
-        return view('savefile/file.logAddFile');
-    });
-    Route::get('/save-file-history-delete', function () {
-        return view('savefile/file.logDeleteFile');
-    });
+Route::get('/save-file', [SaveFileController::class, 'index']);
+Route::get('/save-file/add', [SaveFileController::class, 'add']);
+Route::get('/save-file-history-input', [SaveFileController::class, 'history']);
+Route::get('/save-file-history-delete', [SaveFileController::class, 'historydelete']);
+Route::post('/file/add', [SaveFileController::class, 'store']);
+Route::get('/file/{id}', [SaveFileController::class, 'downloadfile']);
+Route::get('/deletefile/{id}', [SaveFileController::class, 'deletefile']);
 
-    //------------------------- Save File --------------------------------
-    Route::get('/save-file-gambar', function () {
-        return view('savefile/filegambar.saveFileGambar');
-    });
-    Route::get('/save-file-gambar/add', function () {
-        return view('savefile/filegambar.addSaveFileGambar');
-    });
-    Route::get('/save-file-gambar-history-input', function () {
-        return view('savefile/filegambar.logAddFileGambar');
-    });
-    Route::get('/save-file-gambar-history-delete', function () {
-        return view('savefile/filegambar.logDeleteFileGambar');
-    });
+Route::get('/save-file-gambar', [SaveFileController::class, 'indeximg']);
+Route::get('/gambar/{id}', [SaveFileController::class, 'viewimg']);
+Route::get('/save-file-gambar/add', [SaveFileController::class, 'addimg']);
+Route::get('/save-file-gambar-history-input', [SaveFileController::class, 'historyimg']);
+Route::get('/save-file-gambar-history-delete', [SaveFileController::class, 'historydeleteimg']);
+Route::post('/img/add', [SaveFileController::class, 'storeimg']);
+Route::get('/deleteimg/{id}', [SaveFileController::class, 'deleteimg']);
+
+
 });
 
 

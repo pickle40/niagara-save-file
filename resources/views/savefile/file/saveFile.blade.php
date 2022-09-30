@@ -39,16 +39,17 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($list_file as $file)
                             <tr>
-                                <td>1</td>
-                                <td>28 September 2022</td>
-                                <td>Kucing</td>
-                                <td>Kucing Anggora</td>
+                                <td>{{ date('d F Y', strtotime($file->created_at)) }}</td>
+                                <td>{{ $file->name }}</td>
+                                <td>{{ $file->file }}</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-eyes"></i>View File</button>
-                                    <button type="button" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete File</button>
+                                    <button type="button" onclick="location.href='{{ url('file/'.$file->id) }}'" class="btn btn-primary btn-sm"><i class="mdi mdi-eyes"></i>View File</button>
+                                    <button type="button" onclick="location.href='{{ url('deletefile/'.$file->id) }}'" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete Gambar</button>
                                 </td>
                             </tr>
+                            @endforeach
                             {{-- @foreach ($po_bahan as $i)
                             <tr>
                                 <td>{{ $i->id_po_bahan_baku }}</td>

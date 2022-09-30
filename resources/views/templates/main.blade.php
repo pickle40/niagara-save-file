@@ -54,17 +54,16 @@
         <div class="container-fluid page-body-wrapper">
             <!-- SideNav -->
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <!-- <h5 class="navbar-brand">Welcome, {{ Auth::user()->nama_depan }}</h5>   -->
+                {{-- <!-- <h5 class="navbar-brand">Welcome, {{ Auth::user()->nama_depan }}</h5>   --> --}}
                 <div class="navbar-brand"
                     style="margin-right:0;border-top:0.5px solid rgb(212,212,212,0.3);border-bottom:0.5px solid rgb(212,212,212,0.3)">
                     <div class="row" style="color:white;margin:auto">
                         <div class="col-12 mt-1">
-                            <h6 style="margin-left:20px">{{ Auth::user()->nama_depan }}
-                                {{ Auth::user()->nama_belakang }}</h6>
+                            {{-- <h6 style="margin-left:20px">{{ Auth::user()->nama_depan }} --}}
                             <!-- <h5 style="margin-left:20px"> Raisa Saraswati</h5> -->
                         </div>
                         <div class="col-12 ">
-                            <p style="color:#d4d4d4;margin-left:20px;margin-bottom:0">{{ Auth::user()->posisi }}</p>
+                            {{-- <p style="color:#d4d4d4;margin-left:20px;margin-bottom:0">{{ Auth::user()->posisi }}</p> --}}
                         </div>
                     </div>
                 </div>

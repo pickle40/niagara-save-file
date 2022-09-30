@@ -31,24 +31,24 @@
                     <table class="table table-bordered" id="table-akun">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>tanggal Di simpan</th>
+                                <th>Tanggal Disimpan</th>
                                 <th>Nama</th>
                                 <th>Nama File Gambar</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody> 
+                            @foreach ($list_img as $gambar)
                             <tr>
-                                <td>1</td>
-                                <td>28 September 2022</td>
-                                <td>Kucing</td>
-                                <td>Kucing Anggora</td>
+                                <td>{{ date('d F Y', strtotime($gambar->created_at)) }}</td>
+                                <td>{{ $gambar->name }}</td>
+                                <td>{{ $gambar->file }}</td>
                                 <td>
-                                    <button type="button" class="btn btn-primary btn-sm"><i class="mdi mdi-eyes"></i>View Gambar</button>
-                                    <button type="button" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete Gambar</button>
+                                    <button type="button" onclick="location.href='{{ url('gambar/'.$gambar->id) }}'" class="btn btn-primary btn-sm"><i class="mdi mdi-eyes"></i>View Gambar</button>
+                                    <button type="button" onclick="location.href='{{ url('deleteimg/'.$gambar->id) }}'" class="btn btn-danger btn-sm"><i class="mdi mdi-delete"></i>Delete Gambar</button>
                                 </td>
                             </tr>
+                            @endforeach
                             {{-- @foreach ($po_bahan as $i)
                             <tr>
                                 <td>{{ $i->id_po_bahan_baku }}</td>
